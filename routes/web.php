@@ -11,6 +11,14 @@
 |
 */
 
+use Illuminate\Routing\Route;
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get("index", "CoachingController@index");
+
+Route::get("form/{routeParam}", "CoachingController@form");
+
+Route::post("create", "CoachingController@create");

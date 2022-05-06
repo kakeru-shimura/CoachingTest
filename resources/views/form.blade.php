@@ -4,7 +4,7 @@
 
 @section('content')
     {{-- Q3-2 --}}
-    <form action="" method="POST">
+    <form action="form/{$routeParam}" method="POST">
         <div>
             <label>ルートパラメーター</label>
             {{-- Q2-3 --}}
